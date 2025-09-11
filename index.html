@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Index — Trabalhos 1º ano | Nicole</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">N</div>
+      <div>
+        <h1>Index da Nicole — 1º ano</h1>
+        <p class="lead">Bem-vindo(a)! Nesta página estão organizados os trabalhos e entregas do 1º ano.</p>
+      </div>
+    </header>
+
+    <nav class="grid">
+      <a class="card" href="./carrinho/index.html">
+        <h3>Carrinho</h3>
+        <p>Apresentação de um carrinho de rolimã.</p>
+      </a>
+
+       <a class="card" href="./oficinaT1/index.html">
+        <h3>Oficina</h3>
+        <p>Oficina ministrada pelo primeiro ano.</p>
+      </a>
+
+       <a class="card" href="./oficinas/index.html">
+        <h3>Oficinas</h3>
+        <p>Oficinas de front-end.</p>
+      </a>
+
+       <a class="card" href="./projetopp/index.html">
+        <h3>Projeto de PP</h3>
+        <p>Trabalho sobre experimentação animal.</p>
+      </a>
+    </nav>
+
+    <footer>
+      <p>Última atualização: <span id="updated">--/--/----</span></p>
+    </footer>
+  </div>
+
+  <script>
+    const d = new Date();
+    const pad = n=>String(n).padStart(2,'0');
+    document.getElementById('updated').textContent = pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear();
+  </script>
+</body>
+</html>
